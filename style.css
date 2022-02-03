@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.main-head{
+    padding: 20px;
+    font-size: 4vw;
+    text-align: center;
+}
+.main-sec{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.main-sec img{
+    width: 70%;
+}
+.travelp{
+    padding: 10px 100px;
+    font-size: 1.4vw;
+    text-align: justify;
+    opacity: 0.8;
+}
+.helphead{
+    margin-top: 80px;
+    text-align: center;
+    color:brown ;
+    opacity: 0.8;
+}
+.carddiv{
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-img-top{
+    width: 18rem;
+    height: 12rem;
+}
+.card-title{
+    font-size: 1.5vw;
+    color:darkblue ;
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: auto auto;
+   padding:2%;
+}
+.image img{
+    padding-top: 80px;
+    width: 100%;
+
+}
+.content{
+    padding: 10px 20px;
+}
+.content h1{
+    font-size: 3vw;
+}
+.content p{
+    font-size: 1.15vw;
+    opacity: 0.8;
+    padding:30px 50px 5px 0px;
+    text-align: justify;
+}
+.content a{
+    margin-right:50px ;
+    float: right;
+}
+.confirm{
+    margin: 5% 20%;
+    padding: 10%;
+    background-color:lightblue;
+}
+.confirm h1{
+    padding: 10px;
+}
+.confirma{
+   display: flex;
+   justify-content: center;
+}
+.completeh{
+    padding: 10%;
+    font-size: 5vw;
+    text-align: center;
+    color: midnightblue;
+}
+.completeh h1{
+   padding: 10px;
+}
