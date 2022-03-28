@@ -20,6 +20,10 @@ body{
     text-align: justify;
     opacity: 0.8;
 }
+.youtube-video{
+    margin: auto;
+    display: block;
+}
 .helphead{
     margin-top: 80px;
     text-align: center;
