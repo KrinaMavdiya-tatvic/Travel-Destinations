@@ -20,7 +20,7 @@ body{
     text-align: justify;
     opacity: 0.8;
 }
-.youtube-video{
+#youtube-video{
     margin: auto;
     display: block;
 }
