@@ -57,7 +57,6 @@ body{
 .image img{
     padding-top: 80px;
     width: 100%;
-
 }
 .content{
     padding: 10px 20px;
@@ -95,4 +94,7 @@ body{
 }
 .completeh h1{
    padding: 10px;
+}
+#contact_us_form{
+    margin: 5rem 20rem;
 }
