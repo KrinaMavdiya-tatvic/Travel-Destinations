@@ -20,6 +20,11 @@ body{
     text-align: justify;
     opacity: 0.8;
 }
+#contact{
+    display: flex;
+    justify-content: right;
+    padding-right: 5rem;
+}
 #youtube-video{
     margin: auto;
     display: block;
