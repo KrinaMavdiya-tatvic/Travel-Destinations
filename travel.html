@@ -12,7 +12,7 @@
     <!-- Statsig -->  
     
     <script src="https://cdn.jsdelivr.net/npm/statsig-sidecar/dist/index.min.js?apikey=client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO"></script>
-    await statsig.initialize('<CLIENT-SDK-KEY>', '<USER-OBJECT>', {
+    await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO',{
           initCompletionCallback: function (duration, success, message) {
             window.dispatchEvent(new CustomEvent("statsig:ready", {
               detail: { statsig: statsig }
