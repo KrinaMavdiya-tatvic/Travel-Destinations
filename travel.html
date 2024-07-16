@@ -6,25 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="facebook-domain-verification" content="mz6nfbp9gn9k0ityghpjop18g1lm84" />
     <title>Travel</title>
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-MNR5F57"></script>
-  
-  
+    
     <!-- Statsig -->  
     
     <script src="https://cdn.jsdelivr.net/npm/statsig-sidecar/dist/index.min.js?apikey=client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO"></script>
     <script src="https://cdn.jsdelivr.net/npm/statsig-js/build/statsig-prod-web-sdk.min.js"></script>
+    
     <script>
-async function initializeStatsig() {
-  await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO', {
-    initCompletionCallback: function (duration, success, message) {
-      window.dispatchEvent(new CustomEvent("statsig:ready", {
-        detail: { statsig: statsig }
-      }));
-    }
-  });
-}
-
-initializeStatsig();
+await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO',{
+  initCompletionCallback: function (duration, success, message) {
+    window.dispatchEvent(new CustomEvent("statsig:ready", {
+      detail: { statsig: statsig }
+    }));
+  }
+}); 
+        
 </script>
     
     
@@ -47,12 +43,6 @@ window.dataLayer.push({
     
     </script>
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N7CS5PM');</script>
-<!-- End Google Tag Manager -->
     
 <!-- Start VWO Async SmartCode -->
 <script type='text/javascript' id='vwoCode'>
