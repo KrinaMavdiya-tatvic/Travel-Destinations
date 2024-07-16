@@ -10,17 +10,24 @@
     <!-- Statsig -->  
     
     <script src="https://cdn.jsdelivr.net/npm/statsig-sidecar/dist/index.min.js?apikey=client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO"></script>
-    <script src="https://cdn.jsdelivr.net/npm/statsig-js/build/statsig-prod-web-sdk.min.js"></script>
-    
-    <script>
-await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO',{
-  initCompletionCallback: function (duration, success, message) {
+    <script src="https://cdn.jsdelivr.net/npm/statsig-js/build/statsig-prod-web-sdk.min.js"></script> 
+  <script src="https://www.unpkg.com/@statsig/statsig-js@latest/build/statsig.min.js"></script>
+
+<script>
+async function initializeStatsig() {
+  await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO', {
+    userID: 'USER_ID', // Optional, but recommended
+    // other optional StatsigOptions (e.g., environment)
+        initCompletionCallback: function (duration, success, message) {
     window.dispatchEvent(new CustomEvent("statsig:ready", {
       detail: { statsig: statsig }
     }));
   }
-}); 
-        
+  });
+  console.log('Statsig initialized successfully!');
+}
+
+initializeStatsig();
 </script>
     
     
