@@ -14,8 +14,8 @@
  
 
 <script>
-async function initializeStatsig() {
-  await statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO', {
+
+  statsig.initialize('client-A6mHBejOPhpuhBuVnUiLChF7phy5QDLC1idoN10raaO', {
     userID: 'USER_ID', // Optional, but recommended
     // other optional StatsigOptions (e.g., environment)
         initCompletionCallback: function (duration, success, message) {
@@ -25,9 +25,6 @@ async function initializeStatsig() {
   }
   });
   console.log('Statsig initialized successfully!');
-}
-
-initializeStatsig();
 </script>
     
     
